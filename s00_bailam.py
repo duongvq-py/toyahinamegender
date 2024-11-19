@@ -24,9 +24,18 @@ hi('Dad', 'm')        | Hi Mr Dad!
 hi('TOYA', None)      | Hi TOYA!
 hi(None, None)        | Hi!
 """
+
 #endregion debai
 
+
 #region bailam
-def hi(name,gender):
-  return 'todo'
+def hi(name, gender):
+   if(gender == 'f' and name):
+      return f'Hi Ms {name}!'
+   elif(gender == 'm' and name):
+      return f'Hi Mr {name}!'
+   elif name: 
+      return f'Hi {name}!'
+   else:
+      return f'Hi!'
 #endregion bailam
